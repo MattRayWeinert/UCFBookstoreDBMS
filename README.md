@@ -15,4 +15,5 @@ activation-1.1.1 configures us to use MIME data (Multipurpose Internet Mail Exte
 ----------------------------------------------------------------------
 
 WEBCONTENT - contains the JSP view pages 
+
 src/main/java/default - contains the servlets that handle the middleware
