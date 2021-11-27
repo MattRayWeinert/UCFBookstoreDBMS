@@ -25,9 +25,13 @@
 		<h2>
 			View Book Request JSP
 			
+			<form action="professorLogin.jsp">
+				<button type="">Home</button>&emsp;
+	    	</form>
+	    	
 			<form action="./LogoutServlet">
 				<button type="">Logout</button>&emsp;
 	    	</form>
-		</h2>
+    	</h2>
 	</body>
 </html>

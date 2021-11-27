@@ -28,8 +28,13 @@
 			<form action="newRequest.jsp">
 		    	<button href="newRequest.jsp">New Book Request</button>&emsp;
 	    	</form>
+
 			<form action="viewRequest.jsp">
 				<button type="">View Old Requests</button>&emsp;
+	    	</form>
+	    	
+ 			<form action="userSettings.jsp">
+				<button type="">Settings</button>&emsp;
 	    	</form>
 	    	
 			<form action="./LogoutServlet">
