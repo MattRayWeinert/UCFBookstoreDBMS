@@ -2,7 +2,7 @@
 Bookstore DBMS Project
 
 ----------------------------------------------------------------------
-required JARS: 
+REQUIRED JARS: 
 1. SQL Connector J - https://dev.mysql.com/downloads/connector/j/
 2. javax.mail.jar - https://javaee.github.io/javamail/ 
 3. activation-1.1.1.jar (MIME Jar) - https://mvnrepository.com/artifact/javax.activation/activation/1.1.1 
