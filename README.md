@@ -1,5 +1,5 @@
 # UCFBookstoreDBMS
 Bookstore DBMS Project
 
-WEBCONTENT - contains the JSP view pages
+WEBCONTENT - contains the JSP view pages /n
 src/main/java/default - contains the servlets that handle the middleware
