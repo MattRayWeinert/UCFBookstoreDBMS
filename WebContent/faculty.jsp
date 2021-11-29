@@ -34,7 +34,7 @@
 		<form action="./CreateAccount" method="post">
 		  	<div class="container">
 			    <label for="username"><b>Create Account: </b></label>
-			    <input type="text" placeholder="Enter Email" name="email" required>
+			    <input type="email" placeholder="Enter Email" name="email" required>
 			    <button type="submit">Submit</button>&emsp;
 		  	</div>
 		</form>
@@ -49,6 +49,7 @@
         	<th style="border: 1px solid black">Last Name</th>
         	<th style="border: 1px solid black">Email</th>
 		     <c:forEach items="${results}" var="item">
+		     
 		       <tr>
 				<form action="./FacultyChangeServlet" method="post">
 					<td style="border: 1px solid black; width: 10%;"><input style="width: 99%" type="text" placeholder="${item.accountID}" name="accountID" value="${item.accountID}" readonly></td>
@@ -58,7 +59,8 @@
 					<td style="border: 1px solid black" ><input style="width: 99%" type="text" placeholder="${item.firstName}" name="firstName" value="${item.firstName}"></td>
 					<td style="border: 1px solid black"><input style="width: 99%" type="text" placeholder="${item.lastName}" name="lastName" value="${item.lastName}"></td>
 					<td style="border: 1px solid black"><input style="width: 99%" type="text" placeholder="${item.email}" name="email" value="${item.email}"></td>
-					<td style="width: 1%"><button>Submit</button></td>
+					<td style="width: 1%"><button name="update_button" value="Update">Submit</button></td>
+					<td style="width: 1%"><button name="delete_button" value="Delete">Delete</button></td>
 				</form>
 		       </tr>
 		     </c:forEach>
