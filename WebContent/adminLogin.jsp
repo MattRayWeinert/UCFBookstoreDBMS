@@ -30,7 +30,7 @@
 			<form action="./FacultyServlet" method="post">
 				<button>Faculty</button>&emsp;
 	    	</form>
-			
+	    	
 			<form action="./LogoutServlet">
 				<button>Logout</button>&emsp;
 	    	</form>

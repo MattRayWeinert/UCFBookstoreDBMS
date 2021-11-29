@@ -25,7 +25,7 @@
 		<h2>
 
 			Hello, ${firstName}. <br/><br/>
-			<form action="newRequest.jsp">
+			<form action="newRequest.jsp" method="post">
 		    	<button href="newRequest.jsp">New Book Request</button>&emsp;
 	    	</form>
 
@@ -33,7 +33,7 @@
 				<button type="">View Old Requests</button>&emsp;
 	    	</form>
 	    	
- 			<form action="userSettings.jsp">
+ 			<form action="userSettings.jsp" method="post">
 				<button type="">Settings</button>&emsp;
 	    	</form>
 	    	

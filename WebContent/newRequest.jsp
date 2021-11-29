@@ -23,8 +23,21 @@
 			}
 	    %>
 		<h2>
-			New Book Request JSP 
+			New Book Request JSP<br/><br/>
 			
+			<form action="professorLogin.jsp">
+				<button type="">Home</button>&emsp;
+	    	</form>
+	    	
+ 			<form action="./BookstoreServlet" method="post">
+				<button type="">View Old Requests</button>&emsp;
+	    	</form>
+			
+			<form action="./LogoutServlet">
+				<button type="">Logout</button>&emsp;
+	    	</form>
+    	</h2>
+    	
 			<form action="./CreateEntryServlet" method="post">
 			  	<div class="container">
 				    <input type="text" placeholder="Enter ISBN" name="isbn" required>
@@ -36,14 +49,5 @@
 			  	</div>
 			</form>
 			<br/>
-			
-			<form action="professorLogin.jsp">
-				<button type="">Home</button>&emsp;
-	    	</form>
-	    	
-			<form action="./LogoutServlet">
-				<button type="">Logout</button>&emsp;
-	    	</form>
-    	</h2>
 	</body>
 </html>

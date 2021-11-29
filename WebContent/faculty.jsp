@@ -24,10 +24,14 @@
 	    %>
 	    
 	    <h2>
-	    	Faculty Database
+	    	Faculty Database<br/><br/>
     	
 			<form action="adminLogin.jsp" method="post">
 				<button>Home</button>&emsp;
+	    	</form>
+	    	
+			<form action="./LogoutServlet">
+				<button>Logout</button>&emsp;
 	    	</form>
     	</h2>
     	
@@ -39,7 +43,7 @@
 		  	</div>
 		</form>
 		<br/><br/>
-			
+
         <table style="width: 100%; border: 1px solid black">
         	<th style="border: 1px solid black">ID</th>
         	<th style="border: 1px solid black">Account Type</th>
@@ -49,7 +53,6 @@
         	<th style="border: 1px solid black">Last Name</th>
         	<th style="border: 1px solid black">Email</th>
 		     <c:forEach items="${results}" var="item">
-		     
 		       <tr>
 				<form action="./FacultyChangeServlet" method="post">
 					<td style="border: 1px solid black; width: 10%;"><input style="width: 99%" type="text" placeholder="${item.accountID}" name="accountID" value="${item.accountID}" readonly></td>
@@ -61,16 +64,10 @@
 					<td style="border: 1px solid black"><input style="width: 99%" type="text" placeholder="${item.email}" name="email" value="${item.email}"></td>
 					<td style="width: 1%"><button name="update_button" value="Update">Submit</button></td>
 					<td style="width: 1%"><button name="delete_button" value="Delete">Delete</button></td>
+					<td style="width: 1%"><button name="reminder_button" value="Reminder">Reminder</button></td>
 				</form>
 		       </tr>
 		     </c:forEach>
-        </table>
-    	
-   		<h2>
-			<form action="./LogoutServlet">
-				<button>Logout</button>&emsp;
-	    	</form>
-    	</h2>
-	    
+        </table>    
 </body>
 </html>
