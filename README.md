@@ -15,6 +15,10 @@ REQUIRED JARS:
 
   activation-1.1.1 configures us to use MIME data (Multipurpose Internet Mail Extensions data).
 
+4. activation-1.1.1.jar - https://mvnrepository.com/artifact/javax.activation/activation/1.1.1
+  
+  library that has features for looping html tags for tables
+
 ----------------------------------------------------------------------
 
 WEBCONTENT - contains the JSP view pages 
