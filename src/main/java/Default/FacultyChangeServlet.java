@@ -32,19 +32,27 @@ public class FacultyChangeServlet extends HttpServlet {
         	ResultSet rs = null;
         	HttpSession session = request.getSession();       
         	
+        	String deleteButton = request.getParameter("update_button");
+        	String updateButton = request.getParameter("delete_button");
+        	
         	String accountID = request.getParameter("accountID");
         	String username = request.getParameter("username");
         	String password = request.getParameter("password");
-
         	String firstName = request.getParameter("firstName");
         	String lastName = request.getParameter("lastName");
         	String email = request.getParameter("email");
-        	
-        	PreparedStatement st = con.prepareStatement("UPDATE useraccounts SET username = '" + username + "', password = '" + password + "', firstName = '" + firstName + 
-        			"', lastName = '" + lastName + "', email = '" + email + "' WHERE useraccounts.accountID = '" + accountID + "'");
-        	System.out.println(st);
-    		st.executeUpdate();
-        	response.sendRedirect(request.getContextPath() + "/adminLogin.jsp");
+        	        
+        	if(deleteButton != null) {
+        		PreparedStatement st = con.prepareStatement("UPDATE useraccounts SET username = '" + username + "', password = '" + password + "', firstName = '" + firstName + 
+        				"', lastName = '" + lastName + "', email = '" + email + "' WHERE useraccounts.accountID = '" + accountID + "'");
+        		st.executeUpdate();
+        		response.sendRedirect(request.getContextPath() + "/adminLogin.jsp");        		
+        	} else if (updateButton != null) {
+            	PreparedStatement st = con.prepareStatement("DELETE FROM useraccounts WHERE accountID = ?");
+            	st.setString(1, accountID);
+        		st.executeUpdate();
+            	response.sendRedirect(request.getContextPath() + "/adminLogin.jsp");
+        	}
 
         } catch (Exception e) {
             e.printStackTrace();
