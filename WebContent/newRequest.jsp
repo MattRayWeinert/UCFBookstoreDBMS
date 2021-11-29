@@ -23,30 +23,27 @@
 			}
 	    %>
 		<h2>
-			New Book Request JSP
+			New Book Request JSP 
+			
+			<form action="./CreateEntryServlet" method="post">
+			  	<div class="container">
+				    <input type="text" placeholder="Enter ISBN" name="isbn" required>
+				    <input type="text" placeholder="Enter publisher" name="publisher" required>
+				    <input type="text" placeholder="Enter edition" name="edition" required>
+				    <input type="text" placeholder="Enter author" name="author" required>
+				    <input type="text" placeholder="Enter title" name="title" required>
+				    <button type="submit">Submit</button>&emsp;
+			  	</div>
+			</form>
+			<br/>
 			
 			<form action="professorLogin.jsp">
 				<button type="">Home</button>&emsp;
 	    	</form>
-    	</h2>
-		<form action="./NewRequestServlet">
-	    	<label for="username"><b>Request: </b></label>
-			<br/>
-	    	<input type="text" placeholder="Book Title" name="bookTitle" required>
-			<br/>
-	    	<input type="text" placeholder="Author Names" name="authorNames" required>
-			<br/>			
-	    	<input type="text" placeholder="Edition" name="edition" required>
-			<br/>			
-	    	<input type="text" placeholder="Publisher" name="publisher" required>
-			<br/>			
-	    	<input type="text" placeholder="ISBN" name="isbn" required>
-			<br/>
-		    <button type="submit">Submit</button>
-    	</form></br>
 	    	
 			<form action="./LogoutServlet">
 				<button type="">Logout</button>&emsp;
 	    	</form>
+    	</h2>
 	</body>
 </html>
