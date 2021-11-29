@@ -48,6 +48,7 @@ public class LoginServlet extends HttpServlet {
             	session.setAttribute("accountID", rs.getString("accountID"));
             	session.setAttribute("accountType", rs.getString("accountType")); // Account Type "1" = Admin, Account Type "2" = Professor
             	session.setAttribute("username", rs.getString("username"));
+            	session.setAttribute("password", rs.getString("password"));
             	session.setAttribute("firstName", rs.getString("firstName"));
             	session.setAttribute("lastName", rs.getString("lastName"));
             	session.setAttribute("email", rs.getString("email"));

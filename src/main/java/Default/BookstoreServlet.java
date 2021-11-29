@@ -34,8 +34,11 @@ public class BookstoreServlet extends HttpServlet {
         	PreparedStatement st = null;
         	HttpSession session = request.getSession();       
         	
-        	String query = "SELECT * FROM bookorders";
-        	st = con.prepareStatement(query);
+        	Object accountID = session.getAttribute("accountID");        	
+        	int id = Integer.valueOf((String) accountID);
+        	
+        	st = con.prepareStatement("SELECT * FROM bookorders WHERE accountID = ?");
+        	st.setInt(1, id);
         	rs = st.executeQuery();
         	List<Map> list = new ArrayList<Map>();
         	
@@ -51,8 +54,7 @@ public class BookstoreServlet extends HttpServlet {
         		list.add(map);
         	}
         	
-        	session.setAttribute("results", list);
-        	System.out.println(Arrays.toString(list.toArray()));
+        	session.setAttribute("books", list);
         	response.sendRedirect(request.getContextPath() + "/viewRequest.jsp");
         } catch (Exception e) {
             e.printStackTrace();

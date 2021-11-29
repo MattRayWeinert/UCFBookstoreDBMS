@@ -34,7 +34,8 @@ public class FacultyChangeServlet extends HttpServlet {
         	
         	String deleteButton = request.getParameter("update_button");
         	String updateButton = request.getParameter("delete_button");
-        	
+        	String reminderButton = request.getParameter("reminder_button");
+
         	String accountID = request.getParameter("accountID");
         	String username = request.getParameter("username");
         	String password = request.getParameter("password");
@@ -51,6 +52,9 @@ public class FacultyChangeServlet extends HttpServlet {
             	PreparedStatement st = con.prepareStatement("DELETE FROM useraccounts WHERE accountID = ?");
             	st.setString(1, accountID);
         		st.executeUpdate();
+            	response.sendRedirect(request.getContextPath() + "/adminLogin.jsp");
+        	} else if (reminderButton != null) {
+        		SendMail.sendEmail(email, "Book request reminder", "REMINDER: Submit book your requests.");
             	response.sendRedirect(request.getContextPath() + "/adminLogin.jsp");
         	}
 
