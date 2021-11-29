@@ -29,7 +29,7 @@
 		    	<button href="newRequest.jsp">New Book Request</button>&emsp;
 	    	</form>
 
-			<form action="viewRequest.jsp">
+			<form action="./BookstoreServlet" method="post">
 				<button type="">View Old Requests</button>&emsp;
 	    	</form>
 	    	
