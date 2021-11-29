@@ -36,6 +36,7 @@ public class CreateAccountServlet extends HttpServlet {
         	HttpSession session = request.getSession();       
         	
         	String email = request.getParameter("email");
+        	String usernameOnly = email.substring(0,email.indexOf('@'));
         	String query = "SELECT * FROM useraccounts WHERE email = ?";
         	st = con.prepareStatement(query);
         	st.setString(1, email);
@@ -59,7 +60,7 @@ public class CreateAccountServlet extends HttpServlet {
         		// Send email the new account info + the login link
             	PreparedStatement st2 = con.prepareStatement("INSERT into useraccounts (accountType, username, password, firstNAme, lastName, email) values (?, ?, ?, ?, ?, ?)");
             	st2.setInt(1,  2);
-            	st2.setString(2, newUsername);
+            	st2.setString(2, usernameOnly);
             	st2.setString(3, newPassword);
             	st2.setString(4, "Default First Name");
             	st2.setString(5, "Default Last Name");
