@@ -23,19 +23,17 @@
 			}
 	    %>
 		<h2>
-			Hello, ${firstName}. <br/><br/>
-			
-			<form action="./CreateAccount" method="post">
-			  	<div class="container">
-				    <label for="username"><b>Create Account: </b></label>
-				    <input type="text" placeholder="Enter Email" name="email" required>
-				    <button type="submit">Submit</button>&emsp;
-			  	</div>
-			</form>
-			<br/>
-			<form action="./LogoutServlet">
-				<button type="">Logout</button>&emsp;
-	    	</form>
+			Hello, ${firstName}.
 		</h2>
+			
+		<h2>
+			<form action="./FacultyServlet" method="post">
+				<button>Faculty</button>&emsp;
+	    	</form>
+			
+			<form action="./LogoutServlet">
+				<button>Logout</button>&emsp;
+	    	</form>
+    	</h2>
 	</body>
 </html>

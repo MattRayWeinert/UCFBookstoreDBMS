@@ -61,8 +61,8 @@ public class CreateAccountServlet extends HttpServlet {
             	st2.setInt(1,  2);
             	st2.setString(2, newUsername);
             	st2.setString(3, newPassword);
-            	st2.setString(4, "firstName");
-            	st2.setString(5, "lastName");
+            	st2.setString(4, "Default First Name");
+            	st2.setString(5, "Default Last Name");
             	st2.setString(6, email);
         		st2.executeUpdate();
         		

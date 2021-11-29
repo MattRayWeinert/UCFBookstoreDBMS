@@ -29,9 +29,9 @@
 				<button type="">Home</button>&emsp;
 	    	</form>
 	    	
+    	</h2>
 			<form action="./LogoutServlet">
 				<button type="">Logout</button>&emsp;
 	    	</form>
-    	</h2>
 	</body>
 </html>
