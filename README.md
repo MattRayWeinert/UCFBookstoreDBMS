@@ -17,7 +17,7 @@ REQUIRED JARS:
 
 4. activation-1.1.1.jar - https://mvnrepository.com/artifact/javax.activation/activation/1.1.1
   
-  JavaBeans library that has features for looping html tags for tables
+  JavaBeans framework that has features for looping html tags for tables
 
 ----------------------------------------------------------------------
 
