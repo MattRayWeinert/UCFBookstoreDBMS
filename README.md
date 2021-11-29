@@ -17,7 +17,7 @@ REQUIRED JARS:
 
 4. jstl-1.2.jar - https://mvnrepository.com/artifact/javax.servlet/jstl/1.2
   
-  JavaBeans framework that has features for looping html tags for tables
+  Java servlet framework that has features for looping html tags for tables
 
 ----------------------------------------------------------------------
 
