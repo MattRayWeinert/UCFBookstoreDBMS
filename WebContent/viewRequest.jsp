@@ -30,6 +30,31 @@
 	    	</form>
 	    	
     	</h2>
+    	        <table style="width: 100%; border: 1px solid black">
+    	        <th style="border: 1px solid black">Account ID</th>
+    	        <th style="border: 1px solid black">Title</th>
+    	        <th style="border: 1px solid black">Publisher</th>
+    	        <th style="border: 1px solid black">Edition</th>
+    	        <th style="border: 1px solid black">Author</th>
+        		<th style="border: 1px solid black">ISBN</th>
+        	
+        	
+        	
+        	
+		     <c:forEach items="${results}" var="item">
+		       <tr>
+				<form action="./BookstoreServlet" method="post">
+					<td style="border: 1px solid black; width: 10%;"><input style="width: 99%" type="text" placeholder="${item.accountID}" name="accountID" value="${item.accountID}" readonly></td>
+					<td style="border: 1px solid black; width: 10%"><input style="width: 99%" type="text" placeholder="${item.title}" name="title" value="${item.title}"></td>
+					<td style="border: 1px solid black"><input style="width: 99%" type="text" placeholder="${item.publisher}" name="publisher" value="${item.publisher}"></td>
+					<td style="border: 1px solid black"><input style="width: 99%" type="text" placeholder="${item.edition}" name="edition" value="${item.edition}"></td>
+					<td style="border: 1px solid black" ><input style="width: 99%" type="text" placeholder="${item.author}" name="author" value="${item.author}"></td>
+					<td style="border: 1px solid black"><input style="width: 99%" type="text" placeholder="${item.isbn}" name="isbn" value="${item.isbn}"></td>
+					<td style="width: 1%"><button>Submit</button></td>
+				</form>
+		       </tr>
+		     </c:forEach>
+        </table>
 			<form action="./LogoutServlet">
 				<button type="">Logout</button>&emsp;
 	    	</form>
