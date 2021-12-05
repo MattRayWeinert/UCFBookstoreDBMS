@@ -24,11 +24,21 @@
 	    %>
 		<h2>
 			Hello, ${firstName}.
+			
+			<form action="./BroadcastServlet" method="post">
+				<input type="date" name="date" />
+				<button>Broadcast</button>&emsp;
+	    	</form>
 		</h2>
 			
 		<h2>
+
 			<form action="./FacultyServlet" method="post">
 				<button>Faculty</button>&emsp;
+	    	</form>
+	    	
+			<form action="./BookRequestServlet" method="post">
+				<button>Book Requests</button>&emsp;
 	    	</form>
 	    	
 			<form action="./LogoutServlet">

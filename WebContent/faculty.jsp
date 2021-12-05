@@ -30,6 +30,10 @@
 				<button>Home</button>&emsp;
 	    	</form>
 	    	
+	    	<form action="./BookRequestServlet" method="post">
+				<button>Book Requests</button>&emsp;
+	    	</form>
+	    	
 			<form action="./LogoutServlet">
 				<button>Logout</button>&emsp;
 	    	</form>
