@@ -41,17 +41,17 @@ public class CreateEntryServlet extends HttpServlet {
         	String newedition = request.getParameter("edition");
         	String newauthor = request.getParameter("author");
         	String newtitle = request.getParameter("title");
-
+        	
     		// Create new book order
-        	PreparedStatement st2 = con.prepareStatement("INSERT into bookorders (isbn, publisher, edition, author, title, accountID) values (?, ?, ?, ?, ?, ?)");
+        	PreparedStatement st2 = con.prepareStatement("INSERT into bookorders (isbn, publisher, edition, author, title, accountID, email) values (?, ?, ?, ?, ?, ?, ?)");
         	
         	st2.setString(1, newisbn);
         	st2.setString(2, newpublisher);
         	st2.setString(3, newedition);
         	st2.setString(4, newauthor);
         	st2.setString(5, newtitle);
-        	//UPDATE FOR ACCOUNTID
         	st2.setInt(6, id);
+        	st2.setString(7, session.getAttribute("email").toString());
     		st2.executeUpdate();
         		
     		response.sendRedirect(request.getContextPath() + "/professorLogin.jsp");

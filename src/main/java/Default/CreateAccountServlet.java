@@ -68,7 +68,7 @@ public class CreateAccountServlet extends HttpServlet {
         		st2.executeUpdate();
         		
         		SendMail.sendEmail(email, "UCF Bookstore: New password & login link", 
-        				"Your new Bookstore Username is: "+ newUsername + ", and new Password is: " + newPassword + 
+        				"Your new Bookstore Username is: "+ usernameOnly + ", and new Password is: " + newPassword + 
         				". LOGIN LINK: http://localhost:8080/Bookstore/adminLogin.jsp");
         		
         		response.sendRedirect(request.getContextPath() + "/adminLogin.jsp");
