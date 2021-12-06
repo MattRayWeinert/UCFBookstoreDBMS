@@ -32,8 +32,8 @@ public class FacultyChangeServlet extends HttpServlet {
         	ResultSet rs = null;
         	HttpSession session = request.getSession();       
         	
-        	String deleteButton = request.getParameter("update_button");
-        	String updateButton = request.getParameter("delete_button");
+        	String deleteButton = request.getParameter("delete_button");
+        	String updateButton = request.getParameter("update_button");
         	String reminderButton = request.getParameter("reminder_button");
 
         	String accountID = request.getParameter("accountID");
@@ -43,12 +43,12 @@ public class FacultyChangeServlet extends HttpServlet {
         	String lastName = request.getParameter("lastName");
         	String email = request.getParameter("email");
         	        
-        	if(deleteButton != null) {
+        	if(updateButton != null) {
         		PreparedStatement st = con.prepareStatement("UPDATE useraccounts SET username = '" + username + "', password = '" + password + "', firstName = '" + firstName + 
         				"', lastName = '" + lastName + "', email = '" + email + "' WHERE useraccounts.accountID = '" + accountID + "'");
         		st.executeUpdate();
         		response.sendRedirect(request.getContextPath() + "/adminLogin.jsp");        		
-        	} else if (updateButton != null) {
+        	} else if (deleteButton != null) {
             	PreparedStatement st = con.prepareStatement("DELETE FROM useraccounts WHERE accountID = ?");
             	st.setString(1, accountID);
         		st.executeUpdate();
