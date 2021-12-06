@@ -1,62 +1,85 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Faculty</title>
-</head>
-<body>
-	    <%
-	    	Object accountID = request.getAttribute("accountID");
-			Object accountType = request.getAttribute("accountType");
-			Object username = request.getAttribute("username");
-			Object firstName = request.getAttribute("firstName");
-			Object lastName = request.getAttribute("lastName");
-			Object email = request.getAttribute("email");
-			Object error = request.getAttribute("error");
-	
-			session = request.getSession(false);
-			if(session.getAttribute("accountID")==null) {
-	    		response.sendRedirect(request.getContextPath() + "/index.jsp");
-			}
-	    %>
-	    
-	    <h2>
-	    	Faculty Database<br/><br/>
-    	
-			<form action="adminLogin.jsp" method="post">
-				<button>Home</button>&emsp;
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Faculty</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h2>Faculty Database</h2>
+        </a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <form action="adminLogin.jsp" method="post">
+				<button>Home</button>
 	    	</form>
-	    	
-	    	<form action="./BookRequestServlet" method="post">
-				<button>Book Requests</button>&emsp;
+          </li>
+          <li class="nav-item">
+            <form action="./BookRequestServlet" method="post">
+				<button>Book Requests</button>
 	    	</form>
-	    	
-			<form action="./LogoutServlet">
-				<button>Logout</button>&emsp;
+          </li>
+          <li class="nav-item">
+            <form action="./LogoutServlet">
+				<button>Logout</button>
 	    	</form>
-    	</h2>
-    	
-		<form action="./CreateAccount" method="post">
-		  	<div class="container">
-			    <label for="username"><b>Create Account: </b></label>
-			    <input type="email" placeholder="Enter Email" name="email" required>
-			    <button type="submit">Submit</button>&emsp;
-		  	</div>
-		</form>
-		<br/><br/>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<div class="container">
+    <div style="display: block; padding: 30px">
+      <form action="./CreateAccount" method="post">
+        
+          <label for="username"><b>Create Account: </b></label>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            name="email"
+            class="form-control"
+            required
+          />
+          <button
+          type="submit"
+            class="btn btn-outline-success"
+            style="margin-top: 10px"
+            value="Submit"
+          >
+            Submit</button
+          >&emsp;
+        
+      </form>
+    </div>
 
-        <table style="width: 100%; border: 1px solid black">
-        	<th style="border: 1px solid black">ID</th>
-        	<th style="border: 1px solid black">Account Type</th>
-        	<th style="border: 1px solid black">Username</th>
-        	<th style="border: 1px solid black">Password</th>
-        	<th style="border: 1px solid black">First Name</th>
-        	<th style="border: 1px solid black">Last Name</th>
-        	<th style="border: 1px solid black">Email</th>
-		     <c:forEach items="${results}" var="item">
+    <br /><br />
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Account Type</th>
+          <th scope="col">Username</th>
+          <th scope="col">Password</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Email</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <c:forEach items="${results}" var="item">
 		       <tr>
 				<form action="./FacultyChangeServlet" method="post">
 					<td style="border: 1px solid black; width: 10%;"><input style="width: 99%" type="text" placeholder="${item.accountID}" name="accountID" value="${item.accountID}" readonly></td>
@@ -72,6 +95,8 @@
 				</form>
 		       </tr>
 		     </c:forEach>
-        </table>    
-</body>
+      </tbody>
+    </table>
+    </div>
+  </body>
 </html>

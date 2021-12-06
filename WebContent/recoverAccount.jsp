@@ -1,13 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Account Recovery</title>
-</head>
-	<body>
-	    <%
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Account Recovery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+   <%
 	    	Object accountID = request.getAttribute("accountID");
 			Object accountType = request.getAttribute("accountType");
 			Object username = request.getAttribute("username");
@@ -19,15 +26,36 @@
 	
 			session = request.getSession(false);
 	    %>
-	    
-		<form action="./RecoverServlet" method="post">
-		  <div class="container">
-		    <label for="username"><b>Enter your Username: </b></label>
-		    <input type="text" placeholder="Enter Username" name="username" required>
-			<br/><br/>
-		    <button type="submit">Enter</button>&emsp;
-		    <br/><br/>
-		  </div>
-		</form>
-	</body>
+    <div
+      style="
+        width: 340px;
+        margin: 50px auto;
+        font-size: 15px;
+        display: block;
+        text-align: center;
+      "
+    >
+      <form action="./RecoverServlet" method="post">
+        <h2 class="text-center">Recover your account!</h2>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Username"
+            required="required"
+            name="username"
+          />
+        </div>
+        <div class="form-group">
+          <button
+            type="submit"
+            class="btn btn-primary btn-block"
+            style="margin-top: 10px"
+          >
+            Recover Account
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
