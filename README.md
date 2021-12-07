@@ -103,9 +103,10 @@ The Project Structure should be similar to:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-(all the jsp files):<br/>
 <br/>
 
-----------------------------------------------------------------------
+
 DATABASE CONNECTION
 ----------------------------------------------------------------------
+
 <br/>
 In terms of the Database Connection, you can alter the **DatabaseConnection.java** file to change the database username and password. <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145069128-0824e384-fab8-4d5c-bc87-b6a0e6232aef.png)
