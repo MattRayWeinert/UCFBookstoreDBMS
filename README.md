@@ -78,3 +78,26 @@ Within 'Java Build Path Entries', select all the the Jars and click 'Finish'<br/
 Now you can click 'Apply and Close' <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145067438-2ddc1789-f85b-4313-a862-30c6e496806f.png)
 <br/><br/>
+Now we can add a server by clicking on the 'Servers' tab and Creating a new Server<br/>
+![image](https://user-images.githubusercontent.com/43066793/145067654-0c403f1a-2dd3-4c43-89f0-5af70f822222.png)
+<br/><br/>
+Select Tomcat v9.0 Server and click Next<br/>
+![image](https://user-images.githubusercontent.com/43066793/145067728-f6eadac9-0936-48c9-82dc-217a533b5790.png)
+<br/><br/>
+Click the Available Project you want to add, click Add >, then Finish. <br/>
+![image](https://user-images.githubusercontent.com/43066793/145067901-da2ccf07-bb4b-4421-91af-e981e4effffc.png)
+<br/><br/>
+
+Now the project is setup within Eclipse. I suggest copying the files and moving them into the WebContent directory instead of replacing the WebContent folder with the already existing one with the finished code. If you do that then you are messing with the META-INF and WEB-INF which is built specific to your system, so don't replace those.
+<br/>
+The Project Structure should be similar to:
+-Src
+  -main
+    -java
+      -Default
+        -(all the servlet files)
+-WebContent
+  -META-INF
+  -WEB-INF
+    -web.xml
+  -(all the jsp files)
