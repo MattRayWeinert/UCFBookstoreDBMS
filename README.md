@@ -90,14 +90,14 @@ Click the Available Project you want to add, click Add >, then Finish. <br/>
 
 Now the project is setup within Eclipse. I suggest copying the files and moving them into the WebContent directory instead of replacing the WebContent folder with the already existing one with the finished code. If you do that then you are messing with the META-INF and WEB-INF which is built specific to your system, so don't replace those.
 <br/>
-The Project Structure should be similar to:
--Src
-  -main
-    -java
-      -Default
-        -(all the servlet files)
--WebContent
-  -META-INF
-  -WEB-INF
-    -web.xml
-  -(all the jsp files)
+The Project Structure should be similar to:<br/>
+-Src:<br/>
+  -main:<br/>
+    -java:<br/>
+      -Default:<br/>
+        -(all the servlet files):<br/>
+-WebContent:<br/>
+  -META-INF:<br/>
+  -WEB-INF:<br/>
+    -web.xml:<br/>
+  -(all the jsp files):<br/>
