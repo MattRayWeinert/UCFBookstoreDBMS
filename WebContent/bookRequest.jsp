@@ -14,6 +14,12 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous" />
+	  <style>
+    .nav-link-btns{
+    color: whitesmoke;
+    size: 1.5rem;
+}
+    </style>
 </head>
 <body>
 	<%
@@ -33,27 +39,27 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">
-				<h2>New Book Request</h2>
+				<h2>All Book Requests</h2>
 			</a>
 			<ul class="navbar-nav ms-auto">
-				<li class="nav-item">
+				<li class="nav-item px-2">
 					<form action="adminLogin.jsp" method="post">
-						<button>Home</button>
+						<button class="btn btn-link-primary btn-outline-secondary nav-link-btns">Home</button>
 					</form>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item px-2">
 					<form action="./FacultyServlet" method="post">
-						<button>Faculty</button>
+						<button class="btn btn-link-primary btn-outline-secondary nav-link-btns">Faculty</button>
 					</form>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item px-2">
 					<form action="./SaveBooksServlet" method="post">
-						<button>Generate File</button>
+						<button class="btn btn-link-primary btn-outline-secondary nav-link-btns">Generate File</button>
 					</form>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item px-2">
 					<form action="./LogoutServlet">
-						<button>Logout</button>
+						<button class="btn btn-link-primary btn-outline-secondary nav-link-btns">Logout</button>
 					</form>
 				</li>
 			</ul>
