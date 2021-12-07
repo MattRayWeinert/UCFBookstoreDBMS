@@ -92,10 +92,10 @@ Now the project is setup within Eclipse. I suggest copying the files and moving 
 <br/>
 The Project Structure should be similar to:<br/>
 -Src:<br/>
-  -main:<br/>
-    -java:<br/>
-      -Default:<br/>
-        -(all the servlet files):<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-main:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-java:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Default:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-(all the servlet files):<br/>
 -WebContent:<br/>
   -META-INF:<br/>
   -WEB-INF:<br/>
