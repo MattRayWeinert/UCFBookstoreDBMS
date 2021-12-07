@@ -36,26 +36,11 @@ public class SaveBooksServlet extends HttpServlet {
 
         	st = con.prepareStatement("SELECT email, title, author, edition, publisher, isbn FROM bookorders INTO OUTFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/books.csv' FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'");
         	rs = st.executeQuery();
-//        	List<Map> list = new ArrayList<Map>();
-//        	
-//        	while(rs.next()) {
-//        		Map map = new HashMap();
-//        		map.put("title", rs.getString("title"));
-//        		map.put("author", rs.getString("author"));
-//        		map.put("edition", rs.getString("edition"));
-//        		map.put("publisher", rs.getString("publisher"));
-//        		map.put("isbn", rs.getString("isbn"));
-//        		map.put("email", rs.getString("email"));
-//        		
-//        		list.add(map);
-//        	}
-//        	
-//        	session.setAttribute("books", list);
-        	response.sendRedirect(request.getContextPath() + "/adminLogin.jsp");
         	
-        	
+            response.sendRedirect(request.getContextPath() + "/adminLogin.jsp");
 		} catch (Exception e) {
             e.printStackTrace();
+            response.sendRedirect(request.getContextPath() + "/adminLogin.jsp");
         }
 	}
 
