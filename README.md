@@ -22,8 +22,11 @@ REQUIRED JARS:
 ----------------------------------------------------------------------
 REQUIRED SOFTWARE:
 1) Eclipse IDE for Enterprise Java and Web Developers - https://www.eclipse.org/downloads/packages/release/2021-03/r/eclipse-ide-enterprise-java-and-web-developers
+MOST LIKELY WILL REQUIRE THE JAVA & WEB DEVELOPERS ECLIPSE VERSION, OR YOU MIGHT BE MISSING NECESSARY FEATURES.
+
 3) Apache Tomcat 9.0 Server - (installed within the IDE, no external download required)
-4) MySQL Workbench 8.0 - https://dev.mysql.com/downloads/workbench/
+
+5) MySQL Workbench 8.0 - https://dev.mysql.com/downloads/workbench/
 ----------------------------------------------------------------------
 
 WEBCONTENT - contains the JSP view pages 
