@@ -43,8 +43,8 @@ public class CreateAccountServlet extends HttpServlet {
         	rs = st.executeQuery();
         	      		
         	int accountType = 2;
-        	String newUsername = getSaltString();
-        	String newPassword = getSaltString();
+        	String newUsername = randomString();
+        	String newPassword = randomString();
 
         	if(rs.next()) {           	
         		query = "UPDATE useraccounts SET useraccounts.password = '" + newPassword + 
@@ -54,7 +54,7 @@ public class CreateAccountServlet extends HttpServlet {
         		SendMail.sendEmail(email, "UCF Bookstore: New password & login link", 
         				"Your new Bookstore Password is: " + newPassword + ". LOGIN LINK: http://localhost:8080/Bookstore/adminLogin.jsp");
         		
-        		response.sendRedirect(request.getContextPath() + "/adminLogin.jsp");
+        		response.sendRedirect(request.getContextPath() + "/index.jsp");
         	} else {
         		// Create new account
         		// Send email the new account info + the login link
@@ -69,7 +69,7 @@ public class CreateAccountServlet extends HttpServlet {
         		
         		SendMail.sendEmail(email, "UCF Bookstore: New password & login link", 
         				"Your new Bookstore Username is: "+ usernameOnly + ", and new Password is: " + newPassword + 
-        				". LOGIN LINK: http://localhost:8080/Bookstore/adminLogin.jsp");
+        				". LOGIN LINK: http://localhost:8080/Bookstore/index.jsp");
         		
         		response.sendRedirect(request.getContextPath() + "/adminLogin.jsp");
         	}
@@ -80,16 +80,15 @@ public class CreateAccountServlet extends HttpServlet {
         }
 	}
 	
-	protected String getSaltString() {
-        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        StringBuilder salt = new StringBuilder();
+	protected String randomString() {
+        String baseChars = "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        StringBuilder rando = new StringBuilder();
         Random rnd = new Random();
-        while (salt.length() < 6) { // length of the random string
-            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
-            salt.append(SALTCHARS.charAt(index));
+        while (rando.length() < 6) { // length of the random string
+            int index = (int) (rnd.nextFloat() * baseChars.length());
+            rando.append(baseChars.charAt(index));
         }
-        String saltStr = salt.toString();
-        return saltStr;
-
+        
+        return rando.toString();
     }
 }
