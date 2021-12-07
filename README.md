@@ -32,3 +32,6 @@ MOST LIKELY WILL REQUIRE THE JAVA & WEB DEVELOPERS ECLIPSE VERSION, OR YOU MIGHT
 WEBCONTENT - contains the JSP view pages 
 
 src/main/java/default - contains the servlets that handle the middleware
+
+![image](https://user-images.githubusercontent.com/43066793/145062858-59eb2240-0d86-4bee-b79c-4c4eb8b1bf2a.png)
+
