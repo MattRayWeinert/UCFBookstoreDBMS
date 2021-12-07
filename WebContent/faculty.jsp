@@ -42,8 +42,8 @@
 <div class="container">
     <div style="display: block; padding: 30px">
       <form action="./CreateAccount" method="post">
-        
           <label for="username"><b>Create Account: </b></label>
+              	<div class="form-control input-group col-9">        
           <input
             type="email"
             placeholder="Enter Email"
@@ -52,13 +52,13 @@
             required
           />
           <button
-          type="submit"
-            class="btn btn-outline-success"
-            style="margin-top: 10px"
+          	type="submit"
+            class="btn btn-success"
             value="Submit"
           >
             Submit</button
           >&emsp;
+              </div>
         
       </form>
     </div>
@@ -89,9 +89,9 @@
 					<td style="border: 1px solid black" ><input style="width: 99%" type="text" placeholder="${item.firstName}" name="firstName" value="${item.firstName}"></td>
 					<td style="border: 1px solid black"><input style="width: 99%" type="text" placeholder="${item.lastName}" name="lastName" value="${item.lastName}"></td>
 					<td style="border: 1px solid black"><input style="width: 99%" type="text" placeholder="${item.email}" name="email" value="${item.email}"></td>
-					<td style="width: 1%"><button name="update_button" value="Update">Submit</button></td>
-					<td style="width: 1%"><button name="delete_button" value="Delete">Delete</button></td>
-					<td style="width: 1%"><button name="reminder_button" value="Reminder">Reminder</button></td>
+					<td style="width: 1%"><button class="btn btn-success" name="update_button" value="Update">Submit</button></td>
+					<td style="width: 1%"><button class="btn btn-danger" name="delete_button" value="Delete">Delete</button></td>
+					<td style="width: 1%"><button class="btn btn-warning" name="reminder_button" value="Reminder">Reminder</button></td>
 				</form>
 		       </tr>
 		     </c:forEach>

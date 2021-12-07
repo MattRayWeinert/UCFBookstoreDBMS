@@ -42,6 +42,16 @@
 		   	</form>
           </li>
           <li class="nav-item">
+            <form action="newRequest.jsp" method="post">
+		    	<button href="newRequest.jsp">New Book Request</button>
+	    	</form>
+          </li>
+          <li class="nav-item">
+			<form action="./BookstoreServlet" method="post">
+				<button type="">View Old Requests</button>
+			</form>
+		  </li>
+          <li class="nav-item">
            <form action="./LogoutServlet">
 				<button type="">Logout</button>&emsp;
 	    	</form>
@@ -50,77 +60,22 @@
       </div>
     </nav>
 
-    <div
-      style="
-        width: 340px;
-        margin: 50px auto;
-        font-size: 15px;
-        display: block;
-        text-align: center;
-      "
-    >
-      <h4>Edit your information below.</h4>
-      <form action="./SettingsServlet" method="POST">
-        <div class="form-group">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="${username}" 
-            name="username" 
-            value="${username}"
-            required="required"
-          />
-        </div>
-        <div class="form-group" style="padding-top: 10px">
-          <input
-            type="text"
-            class="form-control"
-           placeholder="${password}" 
-           name="password" 
-           value="${password}"
-            required="required"
-          />
-        </div>
-        <div class="form-group" style="padding-top: 10px">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="${firstName}"
-            value="${firstName}"
-            name="firstName"
-            required="required"
-          />
-        </div>
-        <div class="form-group" style="padding-top: 10px">
-          <input
-            type="text"
-            class="form-control"
-            name="lastName"
-            placeholder="${lastName}"
-            value="${lastName}"
-            required="required"
-          />
-        </div>
-        <div class="form-group" style="padding-top: 10px">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="${email}"
-            name="email"
-            value="${email}"
-            required="required"
-          />
-        </div>
-        <div class="form-group">
-          <button
-            type="submit"
-            class="btn btn-primary btn-block"
-            style="margin-top: 10px"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
+	<h2 class="text-center">Edit your information below</h2>
+    <div style="margin: 0 auto; font-size: 15px; display: block; text-align: center;">
+      	<div class="form-control input-group" style="width: 50%; margin: 0 auto; float: none">
+	      	<div style="width: 50%; margin: 0 auto; float: none">
+		      <form action="./SettingsServlet" method="POST">
+		        <div class="container">
+		          <input class="form-control col-9" type="text" placeholder="${username}" name="username" value="${username}" style="margin: 5px" />
+		          <input type="text" class="form-control" placeholder="${password}" name="password" value="${password}" style="margin: 5px" />
+		          <input type="text" class="form-control" placeholder="${firstName}" value="${firstName}" name="firstName" style="margin: 5px" />
+		          <input type="text" class="form-control" name="lastName" placeholder="${lastName}" value="${lastName}" style="margin: 5px" />
+		          <input type="text" class="form-control" placeholder="${email}" name="email" value="${email}" style="margin: 5px" />
+		          <button type="submit" class="btn btn-primary btn-block"> Submit </button>
+		        </div>
+		      </form>
+	      	</div>
+    	</div>
     </div>
   </body>
 </html>

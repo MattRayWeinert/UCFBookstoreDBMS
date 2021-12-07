@@ -30,13 +30,12 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">
-				<h2>Professor Login</h2>
+				<h2>New Book Request</h2>
 			</a>
 			<ul class="navbar-nav ms-auto">
 				<li class="nav-item">
 					<form action="professorLogin.jsp">
 						<button type="">Home</button>
-						&emsp;
 					</form>
 				</li>
 				<li class="nav-item">
@@ -58,22 +57,22 @@
 		</div>
 	</nav>
 
-	<h2 class="text-center">Create a new entry below!</h2>
-	<div style="display: block; text-align: center">
-		<form action="./CreateEntryServlet" method="post">
-			<div class="container">
-				<input type="text" placeholder="Enter ISBN" name="isbn" required />
-				<input type="text" placeholder="Enter publisher" name="publisher"
-					required /> <input type="text"
-					placeholder="Enter edition" name="edition" required />
-				<input type="text" placeholder="Enter author" name="author" required />
-				<input type="text" placeholder="Enter title" name="title" required />
-				<button type="submit" class="btn btn-primary btn-block"
-					style="margin-top: 10px">Submit</button>
-				&emsp;
-			</div>
-		</form>
-	</div>
-	<br />
+	<h2 class="text-center">Create a new entry below</h2>
+    <div style="margin: 0 auto; font-size: 15px; display: block; text-align: center;">
+      	<div class="form-control input-group" style="width: 50%; margin: 0 auto; float: none">
+	      	<div style="width: 50%; margin: 0 auto; float: none">
+			<form action="./CreateEntryServlet" method="post">
+				<div class="container">
+					<input class="form-control col-9" type="text" placeholder="Enter ISBN" name="isbn" style="margin: 5px" required />
+					<input class="form-control col-9" type="text" placeholder="Enter publisher" name="publisher" style="margin: 5px" required /> 
+					<input class="form-control col-9" type="text" placeholder="Enter edition" name="edition" style="margin: 5px" required />
+					<input class="form-control col-9" type="text" placeholder="Enter author" name="author" style="margin: 5px" required />
+					<input class="form-control col-9" type="text" placeholder="Enter title" name="title" style="margin: 5px" required />
+		          <button type="submit" class="btn btn-primary btn-block"> Submit </button>
+				</div>
+			</form>
+	      	</div>
+    	</div>
+    </div>
 </body>
 </html>

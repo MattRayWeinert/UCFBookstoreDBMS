@@ -33,19 +33,11 @@
           <h2>Faculty Database</h2>
         </a>
         <ul class="navbar-nav ms-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="./FacultyServlet">Faculty</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./BookRequestServlet">Book Requests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./LogoutServlet">Logout</a>
-          </li> -->
+
           <li class="nav-item">
             <form action="./FacultyServlet" method="post">
 			<button>Faculty</button>
-		</form>
+			</form>
           </li>
           <li class="nav-item">
             <form action="./BookRequestServlet" method="post">
@@ -70,28 +62,25 @@
       </form> -->
     <form action="./BroadcastServlet" method="post" class="display-inline">
     <div class="d-inline">
-      <div class="form-group col-9 ">
-        <!-- Date input -->
-        <h4>Please select the broadcast date</h4>
-        <input
-          class="form-control "
-          id="date"
-          name="date"
-          placeholder="MM/DD/YYYY"
-          type="date"
-        />
+      <h4>Please select the broadcast date</h4><br/>
+      	<div class="form-control input-group col-9">
+	        <!-- Date input -->
+	        <input
+	          class="form-control col-9"
+	          id="date"
+	          name="date"
+	          placeholder="MM/DD/YYYY"
+	          type="date"
+	        />
+	        <button
+	          class="btn btn-primary"
+	          name="submit"
+	          type="submit"
+	        >
+	          Broadcast
+	        </button>
       </div>
-      <div class="form-group col-3 ">
-        <button
-          class="btn btn-primary"
-          style="margin-top: 10px"
-          name="submit"
-          type="submit"
-        >
-          Broadcast
-        </button>
-      </div>
-      </div>
+    </div>
     </form>
     </div>
   </body>

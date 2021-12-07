@@ -33,18 +33,9 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">
-				<h2>Faculty Database</h2>
+				<h2>New Book Request</h2>
 			</a>
 			<ul class="navbar-nav ms-auto">
-				<!-- <li class="nav-item">
-            <a class="nav-link" href="./FacultyServlet">Faculty</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./BookRequestServlet">Book Requests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./LogoutServlet">Logout</a>
-          </li> -->
 				<li class="nav-item">
 					<form action="adminLogin.jsp" method="post">
 						<button>Home</button>
