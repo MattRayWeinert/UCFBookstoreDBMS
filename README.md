@@ -97,7 +97,7 @@ The Project Structure should be similar to:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Default:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-(all the servlet files):<br/>
 -WebContent:<br/>
-  -META-INF:<br/>
-  -WEB-INF:<br/>
-    -web.xml:<br/>
-  -(all the jsp files):<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-META-INF:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-WEB-INF:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-web.xml:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-(all the jsp files):<br/>
