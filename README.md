@@ -47,6 +47,10 @@ Make sure the 'Dynamic Web Module Version' is set to 4.0 and click on 'New Runti
 Select 'Apache Tomcat v9.0' and click Next >
 ![image](https://user-images.githubusercontent.com/43066793/145063428-98d8f45f-eb53-4aa7-abdd-95aba97153cc.png)
 
+Browse for a location to download the Apache 9.0 server
+![image](https://user-images.githubusercontent.com/43066793/145065500-6c24e586-d36a-4970-afe2-2573ca031923.png)
 
+Download, install and finish.
+![image](https://user-images.githubusercontent.com/43066793/145065644-f59e9733-39fe-4e88-a9b0-a7a9f99ac781.png)
 
 
