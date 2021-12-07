@@ -38,24 +38,24 @@ src/main/java/default - contains the servlets that handle the middleware
 STEPS TO SET-UP (windows)
 ----------------------------------------------------------------------
 Launch a new Dynamic Web Project within Eclipse
-
+ <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145063192-6ffa4f25-b5ef-429f-bfb8-98a9bb9c7f8e.png)
-
-Make sure the 'Dynamic Web Module Version' is set to 4.0 and click on 'New Runtime'
+ <br/>
+Make sure the 'Dynamic Web Module Version' is set to 4.0 and click on 'New Runtime' <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145063366-031236df-16bd-4d12-aafc-24a546a9fa47.png)
-
-Select 'Apache Tomcat v9.0' and click Next >
+ <br/>
+Select 'Apache Tomcat v9.0' and click Next > <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145063428-98d8f45f-eb53-4aa7-abdd-95aba97153cc.png)
-
-Browse for a location to download the Apache 9.0 server
+ <br/>
+Browse for a location to download the Apache 9.0 server <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145065500-6c24e586-d36a-4970-afe2-2573ca031923.png)
-
-Download, install and finish.
+ <br/>
+Download, install and finish. <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145065644-f59e9733-39fe-4e88-a9b0-a7a9f99ac781.png)
-
-Now, hit next twice
+ <br/>
+Now, hit next twice <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145065786-f050e0ce-5c2c-421c-aad5-8f530c3233f4.png)
-
-Change the content directory to 'WebContent', also click the checkbox to Generate a web.xml
+ <br/>
+Change the content directory to 'WebContent', also click the checkbox to Generate a web.xml <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145066013-b1166847-ffa2-4c06-b7c8-0ae255ef3592.png)
-
+ <br/>
