@@ -66,12 +66,12 @@ Right click the project in the Project Explorer and click on Properties.
 Within the properties, (1) click on 'Java Build Path', (2) click on 'Classpath, (3) click on 'Add External Jars' <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145066704-6a1ab60e-d377-42cb-a0c9-e7b423fc8441.png)
 <br/><br/>
-Add all the jars and click Apply<br/>
+Add all the jars and click Apply <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145066884-a431a33b-2d1e-4d22-a0b1-163c799c6222.png)
 <br/><br/>
 Within 'Deployment Assembly', click 'Add...' <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145066997-625f9f10-f441-47bf-957d-13002c5f0196.png)
 <br/><br/>
-Within 'Java Build Path Entries', select all the the Jars and click 'Finish'
+Within 'Java Build Path Entries', select all the the Jars and click 'Finish'<br/>
 ![image](https://user-images.githubusercontent.com/43066793/145067174-eabca8c8-2dd0-4a86-ad14-4832203c54e3.png)
 <br/><br/>
