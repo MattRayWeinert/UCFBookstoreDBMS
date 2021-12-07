@@ -75,3 +75,6 @@ Within 'Deployment Assembly', click 'Add...' <br/>
 Within 'Java Build Path Entries', select all the the Jars and click 'Finish'<br/>
 ![image](https://user-images.githubusercontent.com/43066793/145067174-eabca8c8-2dd0-4a86-ad14-4832203c54e3.png)
 <br/><br/>
+Now you can click 'Apply and Close' <br/>
+![image](https://user-images.githubusercontent.com/43066793/145067438-2ddc1789-f85b-4313-a862-30c6e496806f.png)
+<br/><br/>
