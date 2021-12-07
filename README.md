@@ -89,7 +89,7 @@ Click the Available Project you want to add, click Add >, then Finish. <br/>
 <br/><br/>
 
 Now the project is setup within Eclipse. I suggest copying the files and moving them into the WebContent directory instead of replacing the WebContent folder with the already existing one with the finished code. If you do that then you are messing with the META-INF and WEB-INF which is built specific to your system, so don't replace those.
-<br/>
+<br/><br/>
 The Project Structure should be similar to:<br/>
 -Src:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-main:<br/>
