@@ -23,35 +23,16 @@
 			Object email = request.getAttribute("email");
 			Object error = request.getAttribute("error");
 			
-	
 			session = request.getSession(false);
 	    %>
-    <div
-      style="
-        width: 340px;
-        margin: 50px auto;
-        font-size: 15px;
-        display: block;
-        text-align: center;
-      "
-    >
+    <div style="width: 340px; margin: 50px auto; font-size: 15px; display: block; text-align: center;">
       <form action="./RecoverServlet" method="post">
-        <h2 class="text-center">Recover your account!</h2>
+        <h2 class="text-center">Recover your account</h2>
         <div class="form-group">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Enter Username"
-            required="required"
-            name="username"
-          />
+          <input type="text" class="form-control" placeholder="Enter Username" required="required" name="username" />
         </div>
         <div class="form-group">
-          <button
-            type="submit"
-            class="btn btn-primary btn-block"
-            style="margin-top: 10px"
-          >
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top: 10px" >
             Recover Account
           </button>
         </div>
