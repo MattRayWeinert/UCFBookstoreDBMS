@@ -37,5 +37,7 @@ src/main/java/default - contains the servlets that handle the middleware
 
 STEPS TO SET-UP (windows)
 ----------------------------------------------------------------------
-![image](https://user-images.githubusercontent.com/43066793/145062858-59eb2240-0d86-4bee-b79c-4c4eb8b1bf2a.png)
+Launch a new Dynamic Web Project within Eclipse
+
+![image](https://user-images.githubusercontent.com/43066793/145063192-6ffa4f25-b5ef-429f-bfb8-98a9bb9c7f8e.png)
 
