@@ -1,5 +1,7 @@
 # UCFBookstoreDBMS
 Bookstore DBMS Project
+By: Matthew Weinert, Tristin Young, Aryan Jha, Pratik Gajjar
+UCF ID (in order): 4222842, 4818625, 4624012, 3598922
 
 ----------------------------------------------------------------------
 REQUIRED JARS: 
