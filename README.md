@@ -109,7 +109,7 @@ DATABASE CONNECTION
 
 <br/>
 In terms of the Database Connection, you can alter the <b>DatabaseConnection.java</b> file to change the database username and password. <br/>
-![image](https://user-images.githubusercontent.com/43066793/145069128-0824e384-fab8-4d5c-bc87-b6a0e6232aef.png)
+![image](https://user-images.githubusercontent.com/43066793/145069811-0df0bff5-55e7-4a20-94e0-fb0027f5e148.png)
 <br/><br/>
 
 The Database Schema's structure is as such. <br/>
