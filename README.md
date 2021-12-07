@@ -20,6 +20,11 @@ REQUIRED JARS:
   Java servlet framework that has features for looping html tags for tables
 
 ----------------------------------------------------------------------
+REQUIRED SOFTWARE:
+1) Eclipse IDE for Enterprise Java and Web Developers
+2) Apache Tomcat 9.0 Server
+3) MySQL Workbench 8.0
+----------------------------------------------------------------------
 
 WEBCONTENT - contains the JSP view pages 
 
