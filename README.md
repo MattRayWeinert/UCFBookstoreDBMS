@@ -33,10 +33,10 @@ WEBCONTENT - contains the JSP view pages
 
 src/main/java/default - contains the servlets that handle the middleware
 
-----------------------------------------------------------------------
 
 STEPS TO SET-UP (windows)
 ----------------------------------------------------------------------
+
 Launch a new Dynamic Web Project within Eclipse
  <br/>  <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145063192-6ffa4f25-b5ef-429f-bfb8-98a9bb9c7f8e.png)
