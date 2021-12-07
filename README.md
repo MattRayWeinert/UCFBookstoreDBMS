@@ -125,3 +125,11 @@ The 'useraccounts' table which accounts for the users in the database is as such
 The 'bookorders' table which accounts for all the book orders is as such. <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145069432-5522a53a-b3f8-4f67-b946-6858f7f5dba6.png)
 <br/><br/>
+
+THE END
+----------------------------------------------------------------------
+Make sure you have a user in your database and you can test the functionality of everything.<br/>
+Admin users can create new users within the website. <br/>
+Faculty users can create new book orders and such on the website. <br/>
+
+Enjoy!
