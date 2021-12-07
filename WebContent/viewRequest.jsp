@@ -12,6 +12,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+      <style>
+    .nav-link-btns{
+    color: whitesmoke;
+    size: 1.5rem;
+}
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
@@ -30,24 +36,24 @@
             <a class="nav-link" href="./LogoutServlet">Logout</a>
           </li> -->
           
-          <li class="nav-item">
+          <li class="nav-item px-2">
             <form action="professorLogin.jsp" method="post">
-				<button type="">Home</button>
+				<button class="btn btn-link-primary btn-outline-secondary nav-link-btns" type="">Home</button>
 	    	</form>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-2">
             <form action="newRequest.jsp" method="post">
-		    	<button href="newRequest.jsp">New Book Request</button>
+		    	<button class="btn btn-link-primary btn-outline-secondary nav-link-btns" href="newRequest.jsp">New Book Request</button>
 	    	</form>
           </li>
- 		  <li class="nav-item">
+ 		  <li class="nav-item px-2">
 			<form action="userSettings.jsp" method="post">
-				<button type="">Settings</button>
+				<button class="btn btn-link-primary btn-outline-secondary nav-link-btns" type="">Settings</button>
 			</form>
 		  </li>
-          <li class="nav-item">
+          <li class="nav-item px-2">
             <form action="./LogoutServlet">
-			<button>Logout</button>
+			<button class="btn btn-link-primary btn-outline-secondary nav-link-btns">Logout</button>
 		</form>
           </li>
         </ul>

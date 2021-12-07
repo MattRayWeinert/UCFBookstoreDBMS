@@ -10,6 +10,12 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous" />
+	  <style>
+    .nav-link-btns{
+    color: whitesmoke;
+    size: 1.5rem;
+}
+    </style>
 </head>
 <body>
 
@@ -33,24 +39,24 @@
 				<h2>New Book Request</h2>
 			</a>
 			<ul class="navbar-nav ms-auto">
-				<li class="nav-item">
+				<li class="nav-item px-2">
 					<form action="professorLogin.jsp">
-						<button type="">Home</button>
+						<button class="btn btn-link-primary btn-outline-secondary nav-link-btns" type="">Home</button>
 					</form>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item px-2">
 					<form action="./BookstoreServlet" method="post">
-						<button type="">View Old Requests</button>
+						<button class="btn btn-link-primary btn-outline-secondary nav-link-btns" type="">View Old Requests</button>
 					</form>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item px-2">
 					<form action="userSettings.jsp" method="post">
-						<button type="">Settings</button>
+						<button class="btn btn-link-primary btn-outline-secondary nav-link-btns" type="">Settings</button>
 					</form>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item px-2">
 					<form action="./LogoutServlet">
-						<button type="">Logout</button>
+						<button class="btn btn-link-primary btn-outline-secondary nav-link-btns" type="">Logout</button>
 					</form>
 				</li>
 			</ul>
