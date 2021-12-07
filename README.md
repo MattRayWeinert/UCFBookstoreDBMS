@@ -101,3 +101,23 @@ The Project Structure should be similar to:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-WEB-INF:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-web.xml:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-(all the jsp files):<br/>
+<br/>
+--
+DATABASE CONNECTION
+--
+<br/>
+In terms of the Database Connection, you can alter the **DatabaseConnection.java** file to change the database username and password. <br/>
+![image](https://user-images.githubusercontent.com/43066793/145069128-0824e384-fab8-4d5c-bc87-b6a0e6232aef.png)
+<br/><br/>
+
+The Database Schema's structure is as such. <br/>
+![image](https://user-images.githubusercontent.com/43066793/145069238-ac361211-3304-4d3d-8b6b-2054565e1aa1.png)
+<br/><br/>
+
+The 'useraccounts' table which accounts for the users in the database is as such. </br>
+![image](https://user-images.githubusercontent.com/43066793/145069351-1d71c169-fb8b-4c52-a953-0fe5cbd7a06f.png)
+<br/><br/>
+
+The 'bookorders' table which accounts for all the book orders is as such. <br/>
+![image](https://user-images.githubusercontent.com/43066793/145069432-5522a53a-b3f8-4f67-b946-6858f7f5dba6.png)
+<br/><br/>
