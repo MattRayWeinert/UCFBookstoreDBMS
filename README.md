@@ -56,6 +56,22 @@ Download, install and finish. <br/>
 Now, hit next twice <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145065786-f050e0ce-5c2c-421c-aad5-8f530c3233f4.png)
  <br/> <br/>
-Change the content directory to 'WebContent', also click the checkbox to Generate a web.xml <br/>
+Change the content directory to 'WebContent', also click the checkbox to Generate a web.xml & click finish <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145066013-b1166847-ffa2-4c06-b7c8-0ae255ef3592.png)
  <br/> <br/>
+Assuming you downloaded the jars by this point, we will now add them to the project. <br/>
+Right click the project in the Project Explorer and click on Properties.
+![image](https://user-images.githubusercontent.com/43066793/145066464-ea3a335b-2120-40d5-b04d-13ba50e3ecd6.png)
+<br/><br/>
+Within the properties, (1) click on 'Java Build Path', (2) click on 'Classpath, (3) click on 'Add External Jars' <br/>
+![image](https://user-images.githubusercontent.com/43066793/145066704-6a1ab60e-d377-42cb-a0c9-e7b423fc8441.png)
+<br/><br/>
+Add all the jars and click Apply<br/>
+![image](https://user-images.githubusercontent.com/43066793/145066884-a431a33b-2d1e-4d22-a0b1-163c799c6222.png)
+<br/><br/>
+Within 'Deployment Assembly', click 'Add...' <br/>
+![image](https://user-images.githubusercontent.com/43066793/145066997-625f9f10-f441-47bf-957d-13002c5f0196.png)
+<br/><br/>
+Within 'Java Build Path Entries', select all the the Jars and click 'Finish'
+![image](https://user-images.githubusercontent.com/43066793/145067174-eabca8c8-2dd0-4a86-ad14-4832203c54e3.png)
+<br/><br/>
