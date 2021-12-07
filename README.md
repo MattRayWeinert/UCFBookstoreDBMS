@@ -53,4 +53,9 @@ Browse for a location to download the Apache 9.0 server
 Download, install and finish.
 ![image](https://user-images.githubusercontent.com/43066793/145065644-f59e9733-39fe-4e88-a9b0-a7a9f99ac781.png)
 
+Now, hit next twice
+![image](https://user-images.githubusercontent.com/43066793/145065786-f050e0ce-5c2c-421c-aad5-8f530c3233f4.png)
+
+Change the content directory to 'WebContent', also click the checkbox to Generate a web.xml
+![image](https://user-images.githubusercontent.com/43066793/145066013-b1166847-ffa2-4c06-b7c8-0ae255ef3592.png)
 
