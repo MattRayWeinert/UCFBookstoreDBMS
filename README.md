@@ -60,7 +60,7 @@ Change the content directory to 'WebContent', also click the checkbox to Generat
 ![image](https://user-images.githubusercontent.com/43066793/145066013-b1166847-ffa2-4c06-b7c8-0ae255ef3592.png)
  <br/> <br/>
 Assuming you downloaded the jars by this point, we will now add them to the project. <br/>
-Right click the project in the Project Explorer and click on Properties.
+Right click the project in the Project Explorer and click on Properties. <br/>
 ![image](https://user-images.githubusercontent.com/43066793/145066464-ea3a335b-2120-40d5-b04d-13ba50e3ecd6.png)
 <br/><br/>
 Within the properties, (1) click on 'Java Build Path', (2) click on 'Classpath, (3) click on 'Add External Jars' <br/>
